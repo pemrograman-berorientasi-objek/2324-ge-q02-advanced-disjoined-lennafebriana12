@@ -123,7 +123,6 @@ public class Enrollment {
         this.remedial = null;
     }
 
-    
     public void resetBack() {
         String temp = "";
         temp = this.grade;

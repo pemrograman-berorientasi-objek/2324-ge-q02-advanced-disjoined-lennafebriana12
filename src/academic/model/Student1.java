@@ -75,3 +75,4 @@ public Student1(String id, String name, String angkatan, String initial, double 
         return this.id + "|" + this.name + "|" + this.angkatan + "|" + this.initial + "|" + String.format("%.2f", this.gpa) + "|" + this.totalCredits;
     }
 }
+

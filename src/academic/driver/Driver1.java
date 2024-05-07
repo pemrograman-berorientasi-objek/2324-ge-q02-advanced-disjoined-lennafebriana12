@@ -308,11 +308,11 @@ public class Driver1 {
             }
         }
 
-        for(Enrollment enrollment : enrollments) {
-            if(enrollment.getRemedialCount() > 0) {
-                System.out.println(enrollment.getStudentId() + "|" + enrollment.getGradeValue() + "/" + enrollment.getBack());
-            } 
-        }
+        // for(Enrollment enrollment : enrollments) {
+        //     if(enrollment.getRemedialCount() > 0) {
+        //         System.out.println(enrollment.getStudentId() + "|" + enrollment.getGradeValue() + "/" + enrollment.getBack());
+        //     } 
+        // }
 
         sc.close();
     }

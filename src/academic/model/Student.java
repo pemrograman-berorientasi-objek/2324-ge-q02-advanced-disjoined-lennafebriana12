@@ -40,3 +40,4 @@ public Student(String id, String name, String angkatan, String initial){
         return super.toString() + "|" + this.angkatan + "|" + this.initial;
     }
 }
+

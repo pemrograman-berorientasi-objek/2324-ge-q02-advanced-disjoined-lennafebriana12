@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  */
 
 
- 
+
 public class Course {
     private String code;
     private String name;

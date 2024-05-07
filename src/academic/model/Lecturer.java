@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author 12S22017 Lenna Febriana
  */
 
- 
+
 public class Lecturer extends Combination{
     private String email;
     private String initial;
@@ -41,6 +41,7 @@ public Lecturer(String id, String name, String initial, String email, String stu
         return name;
     }
 
+    
     @Override
     public String toString() {
         return super.toString() + "|" + this.initial + "|" + this.email + "|" + this.studyProgram;

@@ -15,7 +15,7 @@ public class CourseOpening {
     private String academicyear;
     private String semester;
     private String string;
-  
+
     
     public CourseOpening(String course_code,String academicyear,String semester, String string) {
         this.course_code = course_code;
