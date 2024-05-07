@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * @author 12S22017 Lenna Febriana
  */
 
+ 
 public class Lecturer extends Combination{
     private String email;
     private String initial;

@@ -14,6 +14,7 @@ public class Enrollment {
     private String back;
     private String remedial;
     private int remedialCount;
+    private String beststudent;
 
     public Enrollment(String courseId, String studentId,String academicyear, String semester) {
         this.courseId = courseId;
@@ -24,6 +25,11 @@ public class Enrollment {
         this.back = "";
         this.remedial = null;
         this.remedialCount = 0;
+        this.beststudent= beststudent;
+    }
+
+    public String getbeststudent() {
+        return beststudent;
     }
 
     public String getCourseId() {
@@ -117,10 +123,15 @@ public class Enrollment {
         this.remedial = null;
     }
 
+    
     public void resetBack() {
         String temp = "";
         temp = this.grade;
         this.grade = this.back;
         this.back = temp;
     }   
+
+    public String getOrDefaualt() {
+        return back;
+    }
 }

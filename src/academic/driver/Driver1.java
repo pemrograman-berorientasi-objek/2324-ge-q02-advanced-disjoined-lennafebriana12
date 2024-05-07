@@ -15,6 +15,7 @@ import java.util.*;
 
 public class Driver1 {
 
+   
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         ArrayList<Enrollment> enrollments = new ArrayList<>();
@@ -27,6 +28,7 @@ public class Driver1 {
         ArrayList<Enrollment> enrollments1 = new ArrayList<>();
         HashMap<String, Double> gradeValues = new HashMap<>();
         LinkedHashMap<String, Enrollment> enrollmentMapo = new LinkedHashMap<>();
+        
         
         gradeValues.put("A", 4.0);
         gradeValues.put("AB", 3.5);
@@ -270,9 +272,10 @@ public class Driver1 {
                         }
                     new Transcript().process();
                     break;
-                }
-        }       
 
+                    
+            }
+        }         
         students1.forEach(System.out::println);
         for (Map.Entry<String, Enrollment> entry : enrollmentMapo.entrySet()) {
             Enrollment enrollment = entry.getValue();
@@ -305,11 +308,12 @@ public class Driver1 {
             }
         }
 
-       
+        for(Enrollment enrollment : enrollments) {
+            if(enrollment.getRemedialCount() > 0) {
+                System.out.println(enrollment.getStudentId() + "|" + enrollment.getGradeValue() + "/" + enrollment.getBack());
+            } 
+        }
 
         sc.close();
     }
 }
-
-// javac src\example\jdbc\*.java -d bin
-// java -cp "bin;./libs/*"  example.jdbc.Driver
